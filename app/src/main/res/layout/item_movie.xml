@@ -3,47 +3,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="#e6e6e6"
+    >
 
     <ImageView
         android:id="@+id/idPoster"
-        android:layout_width="118dp"
-        android:layout_height="165dp"
+        android:layout_width="wrap_content"
+        android:layout_height="144dp"
+        android:layout_alignTop="@+id/tvTitle"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="-2dp"
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
         android:id="@+id/tvTitle"
-        android:layout_width="283dp"
+        android:layout_width="296dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="127dp"
-        android:layout_marginLeft="127dp"
-        android:layout_marginTop="4dp"
-        android:textColor="#E6070707"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:background="#585757"
+        android:textColor="#fff"
         android:textSize="16sp"
         android:textStyle="bold"
         app:fontFamily="sans-serif"
-        tools:text="Avengers: Endgame" />
+        tools:text=" Avengers: Endgame" />
 
     <TextView
         android:id="@+id/tvOverview"
-        android:layout_width="wrap_content"
+        android:layout_width="249dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_alignEnd="@+id/tvTitle"
+        android:layout_alignRight="@+id/tvTitle"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="125dp"
-        android:layout_marginLeft="125dp"
-        android:layout_marginTop="44dp"
-        android:textColor="#3F51B5"
+        android:layout_marginStart="109dp"
+        android:layout_marginLeft="109dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:maxLines="7"
+        android:textColor="#000000"
         tools:text="After the devastating events of Avengers: Infinity War, the universe is in ruins
          due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers
           must assemble once more in order to undo Thanos' actions and restore order to the universe
