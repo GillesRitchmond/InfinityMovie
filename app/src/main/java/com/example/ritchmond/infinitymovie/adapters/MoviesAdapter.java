@@ -16,11 +16,11 @@ import com.example.ritchmond.infinitymovie.models.Movie;
 
 import java.util.List;
 
-public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder> {
+public class MoviesAdapter extends  RecyclerView.Adapter<MoviesAdapter.ViewHolder> {
     Context context;
     List<Movie> movies;
 
-    public MovieAdapter(Context context, List<Movie> movies) {
+    public MoviesAdapter(Context context, List<Movie> movies) {
         this.context = context;
         this.movies = movies;
     }
@@ -48,21 +48,21 @@ public class MovieAdapter extends  RecyclerView.Adapter<MovieAdapter.ViewHolder>
     {
         TextView tvTitle;
         TextView tvOverview;
-        ImageView idPoster;
+        ImageView ivPoster;
 
         public ViewHolder(View itemView)
         {
             super(itemView);
             tvTitle = itemView.findViewById(R.id.tvTitle);
             tvOverview = itemView.findViewById(R.id.tvOverview);
-            idPoster = itemView.findViewById(R.id.idPoster);
+            ivPoster = itemView.findViewById(R.id.idPoster);
         }
 
         public void bind(Movie movie)
         {
             tvTitle.setText(movie.getTitle());
             tvOverview.setText(movie.getOverview());
-            Glide.with(context).load(movie.getPosterPath()).into(idPoster);
+            Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
         }
     }
 }

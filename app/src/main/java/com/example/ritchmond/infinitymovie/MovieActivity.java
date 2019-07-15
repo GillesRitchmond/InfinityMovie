@@ -1,4 +1,4 @@
-package com.example.flickster2;
+package com.example.ritchmond.infinitymovie;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -7,8 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.flickster2.adapters.MoviesAdapter;
-import com.example.flickster2.models.Movie;
+import com.example.ritchmond.infinitymovie.adapters.MoviesAdapter;
+import com.example.ritchmond.infinitymovie.models.Movie;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
